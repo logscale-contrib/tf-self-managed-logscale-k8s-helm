@@ -52,6 +52,7 @@ variable "sa" {
 
 variable "values" {
   # type = map(any)
+  default = {}
 }
 
 variable "project" {
