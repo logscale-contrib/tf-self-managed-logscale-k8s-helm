@@ -47,10 +47,6 @@ variable "create_namespace" {
 }
 variable "values" {
   # type = map(any)
-  default = yamldecode(<<EOF
-placeHolder: "No values provided"
-EOF
-  )
 }
 
 variable "project" {
