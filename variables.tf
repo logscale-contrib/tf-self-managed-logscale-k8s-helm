@@ -47,7 +47,10 @@ variable "create_namespace" {
 }
 variable "values" {
   # type = map(any)
-  default = {"unused": "No values provided"}
+  default = yamldecode(<<EOF
+placeHolder: "No values provided"
+EOF
+  )
 }
 
 variable "project" {
