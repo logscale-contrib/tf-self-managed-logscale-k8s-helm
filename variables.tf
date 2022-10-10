@@ -45,11 +45,6 @@ variable "create_namespace" {
   type    = bool
   default = false
 }
-
-variable "sa" {
-
-}
-
 variable "values" {
   # type = map(any)
   default = {}

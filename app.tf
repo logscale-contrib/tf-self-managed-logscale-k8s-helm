@@ -18,12 +18,6 @@ resource "kubectl_manifest" "app" {
       "source" = {
         "chart" = var.chart
         "helm" = {
-          "parameters" = [
-            {
-              "name"  = var.value_arn
-              "value" = module.irsa.iam_role_arn
-            },
-          ]
           "releaseName" = var.release
           "values"      = var.values
         }
