@@ -47,7 +47,7 @@ variable "create_namespace" {
 }
 variable "values" {
   # type = map(any)
-  default = {}
+  default = {"unused": "No values provided"}
 }
 
 variable "project" {
