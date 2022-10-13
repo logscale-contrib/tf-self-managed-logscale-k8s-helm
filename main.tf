@@ -6,7 +6,7 @@ resource "kubectl_manifest" "app" {
       "finalizers" = [
         "resources-finalizer.argocd.argoproj.io",
       ]
-      "name"      = var.chart
+      "name"      = "${var.chart}-${var.release}}"
       "namespace" = "argocd"
     }
     "spec" = {
