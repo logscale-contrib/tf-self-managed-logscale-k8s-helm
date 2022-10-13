@@ -35,5 +35,5 @@ variable "project" {
 
 variable "ignoreDifferences" {
   default = null
-  type = list(map)
+  type = list
 }
