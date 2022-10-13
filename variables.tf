@@ -32,3 +32,7 @@ variable "project" {
   type    = string
   default = "default"
 }
+
+variable "ignoreDifferences" {
+  default = []
+}

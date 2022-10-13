@@ -24,6 +24,7 @@ resource "kubectl_manifest" "app" {
         "repoURL"        = var.repository
         "targetRevision" = var.chart_version
       }
+      "ignoreDifferences" = var.ignoreDifferences
       "syncPolicy" = {
         "automated" = {
           "prune"    = true
