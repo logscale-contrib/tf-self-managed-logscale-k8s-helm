@@ -1,8 +1,3 @@
-variable "uniqueName" {
-  type        = string
-  description = "(optional) describe your variable"
-}
-
 variable "repository" {
   type        = string
   description = "(optional) describe your variable"
