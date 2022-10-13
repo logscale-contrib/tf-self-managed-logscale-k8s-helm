@@ -34,5 +34,5 @@ variable "project" {
 }
 
 variable "ignoreDifferences" {
-  default = []
+  default = [any]
 }
