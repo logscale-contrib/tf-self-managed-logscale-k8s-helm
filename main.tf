@@ -31,7 +31,8 @@ resource "kubectl_manifest" "app" {
           "selfHeal" = true
         }
         "syncOptions" = [
-          "CreateNamespace=${var.create_namespace}"
+          "CreateNamespace=${var.create_namespace}",
+          "ServerSideApply=${var.server_side_apply}"
         ]
       }
     }

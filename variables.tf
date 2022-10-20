@@ -24,6 +24,11 @@ variable "create_namespace" {
   type    = bool
   default = false
 }
+variable "server_side_apply" {
+  type = bool
+  default = false
+  description = "(optional) describe your variable"
+}
 variable "values" {
   # type = map(any)
 }
