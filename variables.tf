@@ -30,8 +30,8 @@ variable "server_side_apply" {
   description = "(optional) describe your variable"
 }
 variable "skipCrds" {
-  type        = string
-  default     = "true"
+  type        = bool
+  default     = true
   description = "(optional) describe your variable"
 }
 variable "values" {
