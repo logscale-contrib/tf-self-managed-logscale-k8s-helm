@@ -29,6 +29,11 @@ variable "server_side_apply" {
   default     = true
   description = "(optional) describe your variable"
 }
+variable "skipCrds" {
+  type        = string
+  default     = "true"
+  description = "(optional) describe your variable"
+}
 variable "values" {
   # type = map(any)
 }

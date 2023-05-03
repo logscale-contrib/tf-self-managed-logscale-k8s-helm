@@ -19,6 +19,7 @@ resource "kubectl_manifest" "app" {
         "chart" = var.chart
         "helm" = {
           "releaseName" = var.release
+          "skipCrds"    = var.skipCrds
           "values"      = var.values
         }
         "repoURL"        = var.repository
