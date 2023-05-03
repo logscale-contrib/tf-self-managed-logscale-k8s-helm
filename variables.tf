@@ -25,8 +25,8 @@ variable "create_namespace" {
   default = false
 }
 variable "server_side_apply" {
-  type = bool
-  default = false
+  type        = bool
+  default     = true
   description = "(optional) describe your variable"
 }
 variable "values" {
@@ -40,5 +40,5 @@ variable "project" {
 
 variable "ignoreDifferences" {
   default = null
-  type = list
+  type    = list(any)
 }
