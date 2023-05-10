@@ -50,6 +50,6 @@ variable "ignoreDifferences" {
 
 variable "app_in_argo_namespace" {
   type        = bool
-  default     = false
+  default     = true
   description = "(optional) describe your variable"
 }
