@@ -1,3 +1,5 @@
+
+
 resource "kubectl_manifest" "app" {
   yaml_body = yamlencode({
     "apiVersion" = "argoproj.io/v1alpha1"
@@ -7,7 +9,7 @@ resource "kubectl_manifest" "app" {
         "resources-finalizer.argocd.argoproj.io",
       ]
       "name"      = "${var.chart}-${var.release}"
-      "namespace" = "argocd"
+      "namespace" = var.app_in_argo_namespace ? "argocd" : var.namespace
     }
     "spec" = {
       "destination" = {

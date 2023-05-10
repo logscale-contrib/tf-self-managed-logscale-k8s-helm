@@ -47,3 +47,9 @@ variable "ignoreDifferences" {
   default = null
   type    = list(any)
 }
+
+variable "app_in_argo_namespace" {
+  type        = bool
+  default     = false
+  description = "(optional) describe your variable"
+}
