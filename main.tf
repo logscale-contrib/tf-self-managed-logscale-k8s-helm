@@ -13,7 +13,6 @@ resource "kubernetes_manifest" "app" {
     }
     "spec" = {
       "destination" = {
-        "server"    = "https://kubernetes.default.svc"
         "namespace" = var.namespace
       }
       "project" = var.project
