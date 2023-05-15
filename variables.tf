@@ -53,3 +53,10 @@ variable "app_in_argo_namespace" {
   default     = true
   description = "(optional) describe your variable"
 }
+
+
+variable "destination_name" {
+  type = string
+  default = "in-cluster"
+  description = "(optional) describe your variable"
+}
