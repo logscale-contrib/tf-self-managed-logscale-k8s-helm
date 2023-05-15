@@ -1,7 +1,7 @@
 
 
-resource "kubectl_manifest" "app" {
-  yaml_body = yamlencode({
+resource "kubernetes_manifest" "app" {
+  manifest = {
     "apiVersion" = "argoproj.io/v1alpha1"
     "kind"       = "Application"
     "metadata" = {
@@ -39,6 +39,6 @@ resource "kubectl_manifest" "app" {
         ]
       }
     }
-  })
+  }
 }
 
